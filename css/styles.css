@@ -129,7 +129,7 @@ ul.header-information {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("/images/background-image.jpg");
+    url("../images/background-image.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
@@ -212,16 +212,16 @@ section.benefits-section {
   border-radius: 4px;
 }
 .icon-antena::before {
-  background-image: url("/images/antenna.svg");
+  background-image: url("../images/antenna.svg");
 }
 .icon-clock::before {
-  background-image: url("/images/clock.svg");
+  background-image: url("../images/clock.svg");
 }
 .icon-diagram::before {
-  background-image: url("/images/diagram.svg");
+  background-image: url("../images/diagram.svg");
 }
 .icon-astronaut::before {
-  background-image: url("/images/astronaut.svg");
+  background-image: url("../images/astronaut.svg");
 }
 /* end benefits cection */
 /* start about section */
