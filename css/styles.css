@@ -260,15 +260,17 @@ section.benefits-section {
 }
 ul.team-list {
   display: flex;
-  justify-content: space-between;
-  gap: 30px;
+  margin-left: calc(-1 * 30px);
 }
 .team-item {
-  width: 270px;
-  height: 428px;
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+li.team-item img {
+  width: 100%;
 }
 .team-list li {
   background-color: var(--primary-white-color);
@@ -289,7 +291,15 @@ ul.team-list {
   padding: 30px 0;
   text-align: center;
 }
-li.socia-link-item {
+ul.social-link-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 16px;
+}
+.socia-link-item a {
+  fill: #afb1b8;
   display: flex;
   align-items: center;
   align-items: center;
@@ -297,20 +307,9 @@ li.socia-link-item {
   width: 44px;
   height: 44px;
 }
-ul.social-link-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  margin-top: 30px;
-}
-.socia-link-item a {
-  fill: #afb1b8;
-}
 .socia-link-item a:hover,
 .socia-link-item a:focus {
   background-color: #188ce8;
-  padding: 13px;
   border-radius: 50%;
   fill: #ffffff;
 }
@@ -336,28 +335,24 @@ ul.clients-list {
   margin-left: calc(-1 * 30px);
 }
 .clients-item {
+  flex-basis: calc(100% / 6 - 30px);
+}
+.clients-item a {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  fill: #afb1b8;
   height: 92px;
   width: 170px;
-  flex-basis: calc(100% / 6 - 30px);
   margin-left: 30px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
-.clients-item a {
-  fill: #afb1b8;
-}
-.clients-item:hover,
-.clients-item:focus {
+.clients-item a:hover,
+.clients-item a:focus {
   border-color: var(--hover-color);
-}
-.clients-item:hover.clients-item a,
-.clients-item:focus.clients-item a {
   fill: var(--hover-color);
 }
-/* client-section end */
 
 /* portfolio page srart */
 ul.portfolio-tabs {
@@ -425,8 +420,6 @@ li.portfolio-item img {
 .portfolio-link:hover,
 .portfolio-link:focus {
   display: block;
-  background-color: #ffffff;
-  border: 1px solid #eeeeee;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -487,22 +480,17 @@ address {
   gap: 10px;
   margin-top: 20px;
 }
-/* .social-footer-item {
-  gap: 10px;
-} */
-.social-footer-item {
+.social-footer-item a {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  padding: 12px;
+  fill: var(--primary-white-color);
   display: flex;
   align-items: center;
   align-items: center;
   justify-content: center;
   width: 44px;
   height: 44px;
-}
-.social-footer-item a {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  padding: 12px;
-  fill: var(--primary-white-color);
 }
 .social-footer-item a:hover,
 .social-footer-item a:focus {
