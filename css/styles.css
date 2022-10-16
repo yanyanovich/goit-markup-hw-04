@@ -336,6 +336,7 @@ ul.clients-list {
 }
 .clients-item {
   flex-basis: calc(100% / 6 - 30px);
+  margin-left: 30px;
 }
 .clients-item a {
   display: flex;
@@ -344,7 +345,6 @@ ul.clients-list {
   fill: #afb1b8;
   height: 92px;
   width: 170px;
-  margin-left: 30px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
